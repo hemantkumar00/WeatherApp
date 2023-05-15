@@ -73,6 +73,7 @@ function getInput(e) {
           document.body.style.backgroundSize = "100% ";
         });
     });
+  e.target.value = "";
 }
 
 function time(val, zone) {
