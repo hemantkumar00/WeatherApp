@@ -50,6 +50,27 @@ function getInput(e) {
           //Image
           let weatherImg = document.getElementById("weater-img");
           weatherImg.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+          let weatherName = data.weather[0].main.toLowerCase();
+          let url;
+          if (weatherName == "clear") {
+            url =
+              "https://picjumbo.com/wp-content/uploads/view-of-the-lake-michigan-on-a-sunny-day-free-photo.jpg";
+          } else if (weatherName == "haze") {
+            url =
+              "https://eoimages.gsfc.nasa.gov/images/imagerecords/145000/145827/globeindiasmog_lrg.jpg";
+          } else if (weatherName == "clouds") {
+            url =
+              "https://upload.wikimedia.org/wikipedia/commons/6/6b/Cloudy_Day_01.jpg";
+          } else if (weatherName == "rain") {
+            url =
+              "https://mypenmyfriend.com/wp-content/uploads/2022/09/60a8e096cdfa36001e16a988.jpg";
+          } else {
+            url =
+              "https://eoimages.gsfc.nasa.gov/images/imagerecords/145000/145827/globeindiasmog_lrg.jpg";
+          }
+
+          document.body.style.background = `#f3f3f3 url(${url})`;
+          document.body.style.backgroundSize = "100% ";
         });
     });
 }
