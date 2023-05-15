@@ -1,0 +1,116 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dfdede;
+}
+
+.input-container {
+  margin: 100px auto;
+  display: flex;
+}
+
+.input-element {
+  margin: 0 auto;
+  /* border: 1px solid #555; */
+  border: none;
+  padding: 20px;
+  width: 500px;
+  border-radius: 50px;
+  background-color: white;
+  background-image: url("search-icon-png-9964.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  padding-left: 55px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.information-container {
+  margin-top: 0 auto;
+  display: grid;
+  min-height: 425px;
+  border-radius: 30px;
+  background-color: white;
+  padding: 30px;
+  width: 700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  grid-template-areas:
+    "header header header"
+    "section main aside";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+@media all and (max-width: 800px) {
+  .information-container {
+    grid-template-areas:
+      "header main"
+      "section aside";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+  }
+  img {
+    margin-top: 0;
+  }
+  main {
+    height: 120px;
+  }
+  .aside-container {
+    height: 300px;
+  }
+}
+
+header {
+  grid-area: header;
+}
+
+section {
+  grid-area: section;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+h1 {
+  margin-left: 40px;
+}
+
+ul {
+  list-style: none;
+  margin: 30px 0;
+}
+
+p {
+  margin-left: 40px;
+}
+
+img {
+  margin-top: 70px;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.temperature {
+  margin-bottom: 70px;
+  font-size: 4em;
+}
+
+.heading {
+  font-size: 1.6em;
+}

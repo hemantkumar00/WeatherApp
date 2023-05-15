@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="input-container">
+      <input id="main-input" class="input-element" type="text" />
+    </div>
+    <div class="container">
+      <div class="information-container">
+        <header>
+          <h1 id="city-name" class="main-heading">Jodhpur, IN</h1>
+        </header>
+        <section>
+          <ul>
+            <li class="heading">Sun Rise</li>
+            <li id="sun-rise">10:30:24 AM</li>
+          </ul>
+          <ul>
+            <li class="heading">Weather</li>
+            <li id="weather">Cl</li>
+          </ul>
+          <ul>
+            <li id="low-temp">Min Temp : 32°C</li>
+            <li id="high-temp">Min Max : 32°C</li>
+          </ul>
+          <p id="wind-speed">Wind Speed : 32 Miles/s</p>
+        </section>
+        <main>
+          <img
+            id="weater-img"
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt="Weather Image"
+          />
+        </main>
+        <aside class="aside-container">
+          <ul>
+            <li class="heading">Sun Rise</li>
+            <li id="sun-set">10:30:24 AM</li>
+          </ul>
+          <h1 id="curr-temp" class="temperature">32°C</h1>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
